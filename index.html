@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  <!-- jqueryで実装する場合 -->
+        <link rel="stylesheet" href="main.css">
+        <title>リアルタイムフィルター</title>
+    </head>
+    <body>
+        <h3>リアルタイムフィルター</h3>
+        <p>入力した文字を含まない要素は非表示となります</p>
+        <div class="wrapper">
+            <div class="search-area">
+                <form>
+                    <input type="text" id="search-text" placeholder="ワードを入力">
+                </form>
+                <div class="search-result">
+                    <div class="search-result__hit-num"></div>
+                    <div id="search-result__list"></div>
+                </div>
+            </div>
+            <div class="target-area">
+                <div class="row-layout">
+                    <div class="flowers block-layout">
+                        <img src="image/flowers.jpg">
+                        <span class="keyword">薔薇　バラ　bara</span>
+                    </div>
+                    <div class="pipit block-layout">
+                        <img src="image/pipit.jpg">
+                        <span class="keyword">雀　すずめ　suzume</span>
+                    </div>
+                </div>
+                <div class="row-layout">    
+                    <div class="oranges block-layout">
+                        <img src="image/oranges.jpg">
+                        <span class="keyword">オレンジ　orenji</span>
+                    </div>
+                    <div class="winter block-layout">
+                        <img src="image/winter.jpg">
+                        <span class="keyword">雪山　ゆきやま　yukiyama</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
